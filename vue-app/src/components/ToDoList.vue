@@ -1,6 +1,7 @@
 <template>
     <div>
         <ul>
+            {{todos}}
             <ToDoItem/>
         </ul>
     </div>
@@ -9,6 +10,7 @@
 <script>
 import ToDoItem from '@/components/ToDoItem'
 export default {
+    props: ['todos'],
     components:{
         ToDoItem
     }

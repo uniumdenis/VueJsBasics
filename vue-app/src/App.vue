@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <h1>Vue js app</h1> 
-    <ToDoList/>
+    <ToDoList
+      v-bind:todos="todos"
+    />
   </div>
 </template>
 
@@ -9,6 +11,15 @@
 import ToDoList from '@/components/ToDoList'
 export default {
   name: 'app',
+  data (){
+    return {
+      todos: [
+        {id: 1, title: 'Установить VS Code', completed: false},
+        {id: 2, title: 'Сделать fork https://github.com/grishinrv/VueJsBasics', completed: false},
+        {id: 3, title: 'Разработать просто приложение-список', completed: false}
+      ]
+    }
+  },
   components: {
     ToDoList
   }
