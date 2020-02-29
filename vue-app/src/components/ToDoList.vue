@@ -1,8 +1,11 @@
 <template>
     <div>
         <ul>
-            {{todos}}
-            <ToDoItem/>
+            <ToDoItem 
+                v-for="todo of todos" 
+                v-bind:key="todo.id"
+                v-bind:todo="todo">
+            </ToDoItem>
         </ul>
     </div>
 </template>
