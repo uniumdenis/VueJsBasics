@@ -1,10 +1,18 @@
 <template>
   <div id="app">
     <h1>Vue js app</h1> 
+    <ToDoList/>
   </div>
 </template>
 
 <script>
+import ToDoList from '@/components/ToDoList'
+export default {
+  name: 'app',
+  components: {
+    ToDoList
+  }
+}
 </script>
 
 <style>
