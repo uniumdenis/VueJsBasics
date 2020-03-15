@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="center">
         <ToDoItem 
             v-for="todo of todos" 
             v-bind:key="todo.id"

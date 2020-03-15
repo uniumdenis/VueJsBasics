@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <span>
+    <div class="itemContainer">
+        <div class="headerBlock">
             <input type="checkbox">
             <strong>{{todo.id}}</strong>
             {{todo.title}}
-        </span>
-        <img :src="todo.imgSrc"/>
+        </div>
+        <img :src="todo.imgSrc" class="pic" />
     </div>
 </template>
 
