@@ -1,11 +1,12 @@
 <template>
-    <li>
+    <div>
         <span>
             <input type="checkbox">
             <strong>{{todo.id}}</strong>
             {{todo.title}}
         </span>
-    </li>
+        <img :src="todo.imgSrc"/>
+    </div>
 </template>
 
 <script>
