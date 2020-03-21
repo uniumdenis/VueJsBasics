@@ -1,7 +1,7 @@
 <template>
     <div class="itemContainer">
         <div class="headerBlock">
-            <input type="checkbox">
+            <button v-on:click="printHello(todo.id)">Нажми</button>
             <strong>{{todo.id}}</strong>
             {{todo.title}}
         </div>
@@ -15,6 +15,11 @@ export default {
         todo:{
             type: Object,
             required: true
+        }
+    },
+    methods: {
+        printHello (componentName){
+            alert("Привет от "+componentName);
         }
     }
 }
