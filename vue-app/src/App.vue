@@ -28,7 +28,7 @@ export default {
         },
         {
           id: 3, 
-          title: 'Разработать просто приложение-список', 
+          title: 'Разработать простое приложение-список', 
           completed: false,
           imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQesmcBXMT9k1JFVpWeKmc2MW45YhclQMBPMJqxVeY40xDuU4Nd"
         }
