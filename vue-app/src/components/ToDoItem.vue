@@ -1,11 +1,12 @@
 <template>
-    <li>
-        <span>
-            <input type="checkbox">
+    <div class="itemContainer">
+        <div class="headerBlock">
+            <button v-on:click="printHello(todo.id)">Нажми</button>
             <strong>{{todo.id}}</strong>
             {{todo.title}}
-        </span>
-    </li>
+        </div>
+        <img :src="todo.imgSrc" class="pic" />
+    </div>
 </template>
 
 <script>
@@ -14,6 +15,11 @@ export default {
         todo:{
             type: Object,
             required: true
+        }
+    },
+    methods: {
+        printHello (componentName){
+            alert("Привет от "+componentName);
         }
     }
 }

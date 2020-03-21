@@ -1,12 +1,10 @@
 <template>
-    <div>
-        <ul>
-            <ToDoItem 
-                v-for="todo of todos" 
-                v-bind:key="todo.id"
-                v-bind:todo="todo">
-            </ToDoItem>
-        </ul>
+    <div class="center">
+        <ToDoItem 
+            v-for="todo of todos" 
+            v-bind:key="todo.id"
+            v-bind:todo="todo">
+        </ToDoItem>
     </div>
 </template>
 
